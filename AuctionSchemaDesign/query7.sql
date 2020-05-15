@@ -1,0 +1,6 @@
+SELECT COUNT(DISTINCT Category)
+FROM Category
+WHERE ItemID IN
+    (SELECT DISTINCT ItemID 
+     FROM Bid
+     WHERE CAST(Bid.Amount AS INT) > 100)

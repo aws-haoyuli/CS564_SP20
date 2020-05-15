@@ -1,0 +1,3 @@
+SELECT ItemID FROM Item WHERE CAST(Currently AS INT) IN (
+    SELECT MAX(CAST(Currently AS INT)) FROM Item
+)

@@ -1,0 +1,8 @@
+Design report location 
+./report.pdf
+
+Our additional tests are added in: 
+./src/robustTest.cpp
+
+#Note that our additional tests are complement to the provided tests in main.cpp
+#and is based on the test frame from main.cpp
